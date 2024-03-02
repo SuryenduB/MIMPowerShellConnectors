@@ -1,0 +1,1979 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Connectors>
+    <Connector>
+      <ConnectorConfig>
+        <Parameters>
+          <Parameter>
+            <Name>Distinguished Name Style</Name>
+            <Type>DropDown</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>None</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Export Type</Name>
+            <Type>DropDown</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>ObjectReplace</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Data Normalization</Name>
+            <Type>DropDown</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>None</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Object Confirmation</Name>
+            <Type>DropDown</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>NoAddAndDeleteConfirmation</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Use DN As Anchor (Only LDAP style DN)</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Concurrent Operations Of Several Connectors</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Partitions (Only LDAP style DN)</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Hierarchy (Only LDAP style DN)</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Import</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>1</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Delta Import</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Export</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>1</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Full Export</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>1</Value>
+          </Parameter>
+          <Parameter>
+            <Name>No Reference Values In First Export Pass</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Object Rename</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Delete-Add As Replace</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Password operations</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Enable Export Password In First Pass</Name>
+            <Type>CheckBox</Type>
+            <Use>Capabilities</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Server</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Domain</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>User</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>APIKey</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Password</Name>
+            <Type>EncryptedString</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>true</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Impersonate Connector Account</Name>
+            <Type>CheckBox</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Load User Profile When Impersonating</Name>
+            <Type>CheckBox</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Logon Type When Impersonating</Name>
+            <Type>DropDown</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>None</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Signed Scripts Only</Name>
+            <Type>CheckBox</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Common Module Script Name (with extension)</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>CommonModule.psm1</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Common Module Script</Name>
+            <Type>Text</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>Set-PSDebug -Strict
+
+function Enter-Script
+{
+  &lt;#
+    .Synopsis
+    Writes the Versbose message saying specified script execution started.
+    .Description
+    Writes the Versbose message saying specified script execution started.
+    Also clear the $Error variable.
+  #&gt;
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]
+    $ScriptType,
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNull()]
+    [System.Collections.ArrayList]
+    $ErrorObject
+  )
+
+  process
+  {
+    Write-Verbose "$Global:ConnectorName - $ScriptType Script: Execution Started..."
+    if ($ErrorObject)
+    {
+      $ErrorObject.Clear()
+    }
+  }
+}
+
+function Exit-Script
+{
+  &lt;#
+    .Synopsis
+    Checks $Error variable for any Errors. Writes the Versbose message saying specified script execution sucessfully completed.
+    .Description
+    Checks $Error variable for any Errors. Writes the Versbose message saying specified script execution sucessfully completed.
+    Throws an exception if $Error is present
+  #&gt;
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]
+    $ScriptType,
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNull()]
+    [System.Collections.ArrayList]
+    $ErrorObject,
+    [Parameter(Mandatory = $false)]
+    [switch]
+    $SuppressErrorCheck,
+    [Parameter(Mandatory = $false)]
+    [type]
+    $ExceptionRaisedOnErrorCheck
+  )
+
+  process
+  {
+    if (!$SuppressErrorCheck -and $ErrorObject -and $ErrorObject.Count -ne 0)
+    {
+      # Take the first one otherwise you get "An error occurred while enumerating through a collection: Collection was modified; enumeration operation may not execute.."
+      # Seems like a bug in Remote PSH
+      $errorMessage = $ErrorObject[0] # | Out-String -ErrorAction SilentlyContinue
+
+      if ($ExceptionRaisedOnErrorCheck -eq $null)
+      {
+        $ExceptionRaisedOnErrorCheck = [Microsoft.MetadirectoryServices.ExtensibleExtensionException]
+      }
+
+      $ErrorObject.Clear()
+
+      throw $errorMessage -as $ExceptionRaisedOnErrorCheck
+    }
+
+    Write-Verbose "$Global:ConnectorName - $ScriptType Script: Execution Completed."
+  }
+}
+
+function Get-ExtensionsDirectory
+{
+  &lt;#
+    .Synopsis
+    Gets the path of the "Extensions" folder.
+    .Description
+    Gets the path of the "Extensions" folder.
+  #&gt;
+  [CmdletBinding()]
+  [OutputType([string])]
+  param(
+  )
+
+  process
+  {
+    $scriptDir = "C:\\Program Files\\Microsoft ECMA2Host\\Service\\ECMA"
+
+    return $scriptDir
+  }
+}
+
+function ConvertFrom-SchemaXml
+{
+    &lt;#
+    .Synopsis
+    Converts a connector schema defined in a xml file into a "Microsoft.MetadirectoryServices.Schema" object.
+    .Description
+    Converts a connector schema defined in a xml file into a "Microsoft.MetadirectoryServices.Schema" object.
+    .Example
+    ConvertFrom-SchemaXml -SchemaXml "Schema.xml"
+    #&gt;  
+
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.Schema])]
+  param(
+    [Parameter(Mandatory = $true)]
+    [ValidateScript({ Test-Path $_ -PathType "Leaf" })]
+    [string]
+    $SchemaXml
+  )
+
+  process
+  {
+    $x = [xml](Get-Content $SchemaXml)
+
+    $schema = [Microsoft.MetadirectoryServices.Schema]::Create()
+
+    foreach ($t in $x.Schema.Types.SchemaType)
+    {
+      $lockAnchorDefinition = $true
+
+      if ($t.LockAnchorDefinition -eq "0")
+      {
+        $lockAnchorDefinition = $false
+      }
+
+      $schemaType = [Microsoft.MetadirectoryServices.SchemaType]::Create($t.Name,$lockAnchorDefinition)
+
+      if ($t.GetElementsByTagName("PossibleDNComponentsForProvisioning").Count -gt 0)
+      {
+        foreach ($c in $t.PossibleDNComponentsForProvisioning)
+        {
+          $schemaType.PossibleDNComponentsForProvisioning.Add($c)
+        }
+      }
+
+      foreach ($a in $t.Attributes.SchemaAttribute)
+      {
+        if ($a.IsAnchor -eq 1)
+        {
+          $schemaType.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateAnchorAttribute($a.Name,$a.DataType,$a.AllowedAttributeOperation))
+        }
+        elseif ($a.IsMultiValued -eq 1)
+        {
+          $schemaType.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateMultiValuedAttribute($a.Name,$a.DataType,$a.AllowedAttributeOperation))
+        }
+        else
+        {
+          $schemaType.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateSingleValuedAttribute($a.Name,$a.DataType,$a.AllowedAttributeOperation))
+        }
+      }
+
+      $schema.Types.Add($schemaType)
+    }
+
+    return $schema
+  }
+}
+
+
+function Get-xADSyncPSConnectorSetting
+{
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNull()]
+    [Alias('InputObject')]
+    [System.Collections.ObjectModel.KeyedCollection[string, Microsoft.MetadirectoryServices.ConfigParameter]]
+    $ConfigurationParameters,
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $Name,
+    [Parameter(Mandatory = $true)]
+    [ValidateSet('Global','Partition','RunStep')]
+    [string]
+    $Scope,
+    $DefaultValue
+  )
+  process
+  {
+    try
+    {
+      $scopedName = '{0}_{1}' -f $Name,$Scope
+
+      if ($ConfigurationParameters[$scopedName].Value)
+      {
+        return $ConfigurationParameters[$scopedName].Value
+      }
+      elseif ($PSBoundParameters.ContainsKey('DefaultValue'))
+      {
+        return $DefaultValue
+      }
+      else
+      {
+        return $null
+      }
+    }
+    catch [System.Collections.Generic.KeyNotFoundException]
+    {
+      # if they gave us a default, go ahead and return it
+      if ($PSBoundParameters.ContainsKey('DefaultValue'))
+      {
+        return $DefaultValue
+      }
+      else
+      {
+        throw
+      }
+    }
+  }
+}
+
+function Get-xADSyncPSConnectorFolder
+{
+  [CmdletBinding()]
+  [OutputType([string])]
+  param(
+    [Parameter(Mandatory = $true,Position = 0)]
+    [ValidateSet('ManagementAgent','Extensions')]
+    [string]
+    $Folder
+  )
+
+  switch ($Folder)
+  {
+    'ManagementAgent'
+    {
+      return [Microsoft.MetadirectoryServices.MAUtils]::MAFolder
+    }
+    'Extensions'
+    {
+      return [Microsoft.MetadirectoryServices.Utils]::ExtensionsDirectory
+    }
+    default
+    {
+      throw "Folder '$Folder' is not supported"
+    }
+  }
+}
+
+#region Schema Helpers
+function New-xADSyncPSConnectorSchema
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.Schema])]
+  param()
+
+  return [Microsoft.MetadirectoryServices.Schema]::Create()
+}
+
+function New-xADSyncPSConnectorSchemaType
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.SchemaType])]
+  param(
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $Name,
+    [switch]
+    $LockAnchorAttributeDefinition
+  )
+
+  return [Microsoft.MetadirectoryServices.SchemaType]::Create($Name,$LockAnchorAttributeDefinition.ToBool())
+}
+
+function Add-xADSyncPSConnectorSchemaAttribute
+{
+  [CmdletBinding(DefaultParameterSetName = 'Singlevalued')]
+  param(
+    [Parameter(Mandatory = $true,ValueFromPipeline = $true)]
+    [Microsoft.MetadirectoryServices.SchemaType]
+    [ValidateNotNull()]
+    $InputObject,
+    [ValidateNotNullOrEmpty()]
+    [string]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Anchor')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Multivalued')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Singlevalued')]
+    $Name,
+    [Parameter(ParameterSetName = 'Anchor')]
+    [switch]
+    $Anchor,
+    [Parameter(ParameterSetName = 'Multivalued')]
+    [switch]
+    $Multivalued,
+    [Parameter(Mandatory = $true,ParameterSetName = 'Anchor')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Multivalued')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Singlevalued')]
+    [ValidateSet('Binary','Boolean','Integer','Reference','String')]
+    [string]
+    $DataType,
+    [Parameter(Mandatory = $true,ParameterSetName = 'Anchor')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Multivalued')]
+    [Parameter(Mandatory = $true,ParameterSetName = 'Singlevalued')]
+    [ValidateSet('ImportOnly','ExportOnly','ImportExport')]
+    [string]
+    $SupportedOperation
+  )
+
+  process
+  {
+    switch ($PSCmdlet.ParameterSetName)
+    {
+      'Singlevalued'
+      {
+        $InputObject.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateSingleValuedAttribute($Name,$DataType,$SupportedOperation))
+      }
+      'Multivalued'
+      {
+        if ($Multivalued.ToBool() -eq $true)
+        {
+          $InputObject.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateMultiValuedAttribute($Name,$DataType,$SupportedOperation))
+        }
+        else
+        {
+          $InputObject.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateSingleValuedAttribute($Name,$DataType,$SupportedOperation))
+        }
+      }
+      'Anchor'
+      {
+        if ($Anchor.ToBool() -eq $true)
+        {
+          $InputObject.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateAnchorAttribute($Name,$DataType,$SupportedOperation))
+        }
+        else
+        {
+          $InputObject.Attributes.Add([Microsoft.MetadirectoryServices.SchemaAttribute]::CreateSingleValuedAttribute($Name,$DataType,$SupportedOperation))
+        }
+      }
+      default
+      {
+        throw "Parameter set '$($PSCmdlet.ParameterSetName)' is not supported"
+      }
+    }
+  }
+}
+#endregion
+
+#region Partition Helpers
+function New-FIMPSConnectorPartition
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetaDirectoryServices.Partition])]
+  param(
+    [Parameter(Mandatory = $true)]
+    [guid]
+    $Identifier,
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $DistinguishedName,
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $DisplayName
+  )
+
+  if ($PSBoundParameters.ContainsKey('DisplayName'))
+  {
+    return [Microsoft.MetadirectoryServices.Partition]::Create($Identifier,$DistinguishedName,$DisplayName)
+  }
+  else
+  {
+    return [Microsoft.MetadirectoryServices.Partition]::Create($Identifier,$DistinguishedName)
+  }
+}
+#endregion
+function New-xADSyncPSConnectorHierarchyNode
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.HierarchyNode])]
+  param(
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $DistinguishedName,
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $DisplayName
+  )
+
+  return [Microsoft.MetadirectoryServices.HierarchyNode]::Create($DistinguishedName,$DisplayName)
+}
+#region Hierarchy Helpers
+
+#endregion
+
+#region Import Helpers
+function New-xADSyncPSConnectorCSEntryChange
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.CSEntryChange])]
+  param(
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $ObjectType,
+    [Parameter(Mandatory = $true)]
+    [ValidateSet('Add','Delete','Update','Replace','None')]
+    [string]
+    $ModificationType,
+    [ValidateNotNullOrEmpty()]
+    [Alias('DistinguishedName')]
+    [string]
+    $DN,
+    [ValidateNotNullOrEmpty()]
+    [Alias('RelativeDistinguishedName')]
+    [string]
+    $RDN
+  )
+
+  $csEntry = [Microsoft.MetadirectoryServices.CSEntryChange]::Create()
+  $csEntry.ObjectModificationType = $ModificationType
+  $csEntry.ObjectType = $ObjectType
+
+  if ($PSBoundParameters.ContainsKey('DN'))
+  {
+    $csEntry.DN = $DN
+  }
+
+  if ($PSBoundParameters.ContainsKey('RDN'))
+  {
+    $csEntry.RDN = $RDN
+  }
+
+  Write-Output $csEntry
+}
+
+function Add-xADSyncPSConnectorCSAttribute
+{
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true,ValueFromPipeline = $true)]
+    [Microsoft.MetadirectoryServices.CSEntryChange]
+    [ValidateNotNull()]
+    $InputObject,
+    [Parameter(Mandatory = $true)]
+    [ValidateSet('Add','Update','Delete','Replace','Rename')]
+    [string]
+    $ModificationType,
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $Name,
+    $Value
+  )
+
+  process
+  {
+    if ($ModificationType -ne 'Rename' -and $Name -eq $null)
+    {
+      throw 'Name parameter is required'
+    }
+
+    if ($ModificationType -ne 'Delete' -and $Value -eq $null)
+    {
+      throw 'Value parameter is required'
+    }
+
+    switch ($ModificationType)
+    {
+      'Add'
+      {
+        $InputObject.AttributeChanges.Add([Microsoft.MetadirectoryServices.AttributeChange]::CreateAttributeAdd($Name,$Value))
+      }
+      'Update'
+      {
+        $InputObject.AttributeChanges.Add([Microsoft.MetadirectoryServices.AttributeChange]::CreateAttributeUpdate($Name,$Value))
+      }
+      'Delete'
+      {
+        $InputObject.AttributeChanges.Add([Microsoft.MetadirectoryServices.AttributeChange]::CreateAttributeDelete($Name))
+      }
+      'Replace'
+      {
+        $InputObject.AttributeChanges.Add([Microsoft.MetadirectoryServices.AttributeChange]::CreateAttributeReplace($Name,$Value))
+      }
+      'Rename'
+      {
+        $InputObject.AttributeChanges.Add([Microsoft.MetadirectoryServices.AttributeChange]::CreateNewDN($Value))
+      }
+      default
+      {
+        throw "Modification type $ModificationType is not supported"
+      }
+    }
+  }
+}
+#endregion
+
+#region Export Helpers
+function Get-CSEntryChangeValue
+{
+ &lt;#
+ .Synopsis
+  Gets the value of the specified attribute of the CSEntryChange object.
+ .Description
+  Gets the value of the specified attribute of the CSEntryChange object.
+ .Example
+  Get-CSEntryChangeValue -CSEntryChange $csentryChange -AttributeName "RegistrarPool"
+ .Example
+  Get-CSEntryChangeValue -CSEntryChange $csentryChange -AttributeName "RegistrarPool" -DefaultValue "pool01.contoso.com"
+ .Example
+  Get-CSEntryChangeValue -CSEntryChange $csentryChange -AttributeName "RegistrarPool" -DefaultValue "pool01.contoso.com" -OldValue
+ #&gt;
+
+ [CmdletBinding()]
+ [OutputType([object])]
+ param(
+  [parameter(Mandatory = $true)]
+  [Microsoft.MetadirectoryServices.CSEntryChange]
+  $CSEntryChange,
+  [parameter(Mandatory = $true)]
+  [string]
+  $AttributeName,
+  [parameter(Mandatory = $false)]
+  [object]
+  $DefaultValue = $null,
+  [parameter(Mandatory = $false)]
+  [switch]
+  $OldValue
+ )
+
+ process
+ {
+  if ($CSEntryChange.AttributeChanges.Contains($AttributeName))
+  {
+   $returnDefault = $true
+  
+   $attributeChange = $CSEntryChange.AttributeChanges[$AttributeName]
+  
+   foreach ($valueChange in $attributeChange.ValueChanges)
+   {
+    if ($OldValue)
+    {
+     if ($valueChange.ModificationType -eq "Delete")
+     {
+      $valueChange.Value # add to return pipeline
+      $returnDefault = $false
+     }
+    }
+    else
+    {
+     if ($valueChange.ModificationType -eq "Add")
+     {
+      $valueChange.Value # add to return pipeline
+      $returnDefault = $false
+     }
+    }
+   }
+
+   if ($returnDefault)
+   {
+    $DefaultValue # return
+   }
+  }
+  else
+  {
+   $DefaultValue # return
+  }
+ }
+}
+#endregion
+
+function New-GenericObject
+{
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string]
+    $TypeName,
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [string[]]
+    $TypeParameters,
+    [Parameter(Mandatory = $false)]
+    [object[]]
+    $ConstructorParameters
+  )
+
+  $genericTypeName = $typeName + '
+              `r`n' + $typeParameters.Count
+  $genericType = [type]$genericTypeName
+
+  if (!$genericType)
+  {
+    throw "Could not find generic type $genericTypeName"
+  }
+
+  ## Bind the type arguments to it
+  $typedParameters = [Type[]]$typeParameters
+  $closedType = $genericType.MakeGenericType($typedParameters)
+
+  if (!$closedType)
+  {
+    throw "Could not make closed type $genericType"
+  }
+
+  ## Create the closed version of the generic type. Don't forget comma prefix
+  ,[Activator]::CreateInstance($closedType,$constructorParameters)
+}
+
+Export-ModuleMember -Function * -Verbose:$false -Debug:$false</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Validation Script</Name>
+            <Type>Text</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Schema Script</Name>
+            <Type>Text</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>[CmdletBinding()]
+param(
+  [Parameter(Mandatory = $true)]
+  [System.Collections.ObjectModel.KeyedCollection[string,Microsoft.MetadirectoryServices.ConfigParameter]]
+  $ConfigParameters,
+  [Parameter(Mandatory = $false)]
+  [Alias('PSCredential')] # To fix mess-up of the parameter name in the RTM version of the PowerShell connector.
+  [System.Management.Automation.PSCredential]
+  $Credential,
+  [Parameter(Mandatory = $false)]
+  [ValidateScript({ Test-Path $_ -PathType "Container" })]
+  [string]
+  $ScriptDir = (Join-Path -Path $env:windir -ChildPath "TEMP") # Optional parameter for manipulation by the TestHarness script.
+)
+
+Set-StrictMode -Version "2.0"
+
+$Global:DebugPreference = "Continue"
+$Global:VerbosePreference = "Continue"
+
+$commonModule = (Join-Path -Path ([System.Environment]::GetEnvironmentVariable('Temp', 'Machine')) -ChildPath $ConfigParameters["Common Module Script Name (with extension)"].Value)
+
+if (!(Get-Module -Name (Get-Item $commonModule).BaseName)) { Import-Module -Name $commonModule }
+
+Enter-Script -ScriptType "Schema" -ErrorObject $Error
+
+#region function
+function Get-ConnectorSchema
+{
+&lt;#
+    .Synopsis
+    Gets the connector space schema.
+    .Description
+    Gets the connector space schema defined in the "Schema.xml" file.
+#&gt;
+
+  [CmdletBinding()]
+  [OutputType([Microsoft.MetadirectoryServices.Schema])]
+  param(
+  )
+
+  $extensionsDir = Get-ExtensionsDirectory
+  $schemaXml = Join-Path -Path $extensionsDir -ChildPath "Schema.xml"
+
+  $schema = ConvertFrom-SchemaXml -SchemaXml $schemaXml
+
+  return $schema
+}
+
+function Write-DebugLog {
+  param
+  (
+      [string]$Message
+  )
+
+  $logPath = "C:\SchemaScript.log"
+  $logMessage = "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") - $Message"
+  Add-Content -Path $logPath -Value $logMessage
+
+}
+
+$SchemaJSON = Get-ConnectorSchema | ConvertTo-Json -Depth 10
+Write-DebugLog -Message "Schema: $SchemaJSON"
+
+#endregion
+
+
+Get-ConnectorSchema
+
+Exit-Script -ScriptType "Schema" -ErrorObject $Error</Value>
+          </Parameter>
+          <Parameter>
+            <Name>Additional Config Parameter Names</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Additional Encrypted Config Parameter Names</Name>
+            <Type>String</Type>
+            <Use>Connectivity</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Partition Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Hierarchy Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Begin Import Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Import Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>param(
+    [System.Collections.ObjectModel.KeyedCollection[string, Microsoft.MetadirectoryServices.ConfigParameter]]
+    [ValidateNotNull()]
+    $ConfigParameters,
+    [Microsoft.MetadirectoryServices.Schema]
+    [ValidateNotNull()]
+    $Schema,
+    [Microsoft.MetadirectoryServices.OpenImportConnectionRunStep]
+    $OpenImportConnectionRunStep,
+    [Microsoft.MetadirectoryServices.ImportRunStep]
+    $GetImportEntriesRunStep,
+    [pscredential]
+    $PSCredential
+)
+
+#region Functions
+
+function Write-DebugLog {
+    param
+    (
+        [string]$Message
+    )
+  
+    $logPath = "C:\ImportScript.log"
+    $logMessage = "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") - $Message"
+    Add-Content -Path $logPath -Value $logMessage
+  
+}
+
+function GetTokenFromCredentials {
+    param (
+      [System.Management.Automation.PSCredential]$Credentials
+    )
+     Write-DebugLog "Retrieving TOKEN"
+    $token = $Credentials.GetNetworkCredential().Password
+    Write-DebugLog "TOKEN Retrieval completed"
+    return $token
+  }
+
+#endregion
+
+#region SCIM Functions
+
+function Import-OktaProvisionedUsers {
+    param (
+        
+    )
+    $Token = GetTokenFromCredentials -Credentials $PSCredential
+
+    $headers = @{
+        "Accept" = "application/json"
+        "Content-Type" = "application/json"
+        "Authorization" = "SSWS $Token"
+        "Cookie" = "JSESSIONID=74D0E3DCA57D73E89D7019244B2255D1"
+    }
+    $results = New-Object System.Collections.Generic.List[PSObject]
+
+    $response = Invoke-RestMethod 'https://trial-8839557-admin.okta.com//api/v1/users?filter=status eq "PROVISIONED"' -Method 'GET' -Headers $headers
+    foreach ($user in $response) {
+        $results.Add([PSCustomObject]@{
+            "status" = if ($user.status -eq "PROVISIONED") { "Active" } else { "Inactive" }
+            "firstName" = $user.Profile.firstName
+            "lastName" = $user.Profile.lastName
+            "nickName" = $user.Profile.nickName
+            "displayName" = $user.Profile.displayName
+            "email" = $user.Profile.email
+            "secondEmail" = $user.Profile.secondEmail
+            "profileUrl" = $user.Profile.profileUrl
+            "preferredLanguage" = $user.Profile.preferredLanguage
+            "userType" = $user.Profile.userType
+            "organization" = $user.Profile.organization
+            "title" = $user.Profile.title
+            "division" = $user.Profile.division
+            "department" = $user.Profile.department
+            "costCenter" = $user.Profile.costCenter
+            "employeeNumber" = $user.Profile.employeeNumber
+            "mobilePhone" = $user.Profile.mobilePhone
+            "primaryPhone" = $user.Profile.primaryPhone
+            "streetAddress" = $user.Profile.streetAddress
+            "city" = $user.Profile.city
+            "state" = $user.Profile.state
+            "zipCode" = $user.Profile.zipCode
+            "countryCode" = $user.Profile.countryCode
+            "login" = $user.Profile.login
+            
+        })
+    }
+    $responseDeprovisioned = Invoke-RestMethod 'https://trial-8839557-admin.okta.com//api/v1/users?filter=status eq "DEPROVISIONED"' -Method 'GET' -Headers $headers
+    foreach ($user in $responseDeprovisioned) {
+        $results.Add([PSCustomObject]@{
+            "status" = if ($user.status -eq "DEPROVISIONED") { "Inactive" } else { "Active" }
+            "firstName" = $user.Profile.firstName
+            "lastName" = $user.Profile.lastName
+            "nickName" = $user.Profile.nickName
+            "displayName" = $user.Profile.displayName
+            "email" = $user.Profile.email
+            "secondEmail" = $user.Profile.secondEmail
+            "profileUrl" = $user.Profile.profileUrl
+            "preferredLanguage" = $user.Profile.preferredLanguage
+            "userType" = $user.Profile.userType
+            "organization" = $user.Profile.organization
+            "title" = $user.Profile.title
+            "division" = $user.Profile.division
+            "department" = $user.Profile.department
+            "costCenter" = $user.Profile.costCenter
+            "employeeNumber" = $user.Profile.employeeNumber
+            "mobilePhone" = $user.Profile.mobilePhone
+            "primaryPhone" = $user.Profile.primaryPhone
+            "streetAddress" = $user.Profile.streetAddress
+            "city" = $user.Profile.city
+            "state" = $user.Profile.state
+            "zipCode" = $user.Profile.zipCode
+            "countryCode" = $user.Profile.countryCode
+            
+        })
+    }
+    
+    Write-DebugLog "Imported Users from Okta"
+    $responseJSON = $results | ConvertTo-Json
+    Write-DebugLog "$responseJSON"
+    $results
+
+    
+}
+
+
+#endregion
+
+Set-PSDebug -Strict
+Write-DebugLog "Starting Import Script"
+
+$commonModule = (Join-Path -Path ([Microsoft.MetadirectoryServices.MAUtils]::MAFolder) -ChildPath $ConfigParameters['Common Module Script Name (with extension)'].Value)
+Import-Module -Name $commonModule -Verbose:$false -ErrorAction Stop
+
+$importResults = New-Object -TypeName 'Microsoft.MetadirectoryServices.GetImportEntriesResults'
+
+$csEntries = New-Object -TypeName 'System.Collections.Generic.List[Microsoft.MetadirectoryServices.CSEntryChange]'
+
+$columnsToImport = $Schema.Types[0].Attributes
+
+Write-DebugLog "Loaded $($columnsToImport.Count) attributes to import"
+foreach ($column in $columnsToImport)
+{
+    Write-DebugLog "Attribute: $($column.Name)"
+}
+
+$recordsToImport = Import-OktaProvisionedUsers
+
+Write-DebugLog "Imported $($recordsToImport.Count) records"
+
+
+foreach ($record in $recordsToImport)
+{
+
+    Write-DebugLog 'Starting new record'
+
+    ##TODO: Handle a missing anchor (what exception to throw?)
+
+    $foundValidColumns = $false
+
+    $entrySchema = $Schema.Types[0];
+    $csEntry = New-xADSyncPSConnectorCSEntryChange -ObjectType $entrySchema.Name -ModificationType Add
+
+    foreach ($column in $columnsToImport)
+    {
+
+        $columnName = $column.Name
+
+        Write-DebugLog "Processing column $columnName"
+
+        if ($record.$columnName)
+        {
+
+            Write-DebugLog 'Found column'
+
+            $foundValidColumns = $true
+
+            ##TODO: Support multivalue?
+
+            $anchorAttrName = $entrySchema.AnchorAttributes[0].Name
+            $value = [string]$record.$columnName
+
+            Write-DebugLog "$columnName with value equal $value"
+
+
+            if ($columnName -eq $anchorAttrName) {
+
+
+                $csEntry.AnchorAttributes.Add([Microsoft.MetadirectoryServices.AnchorAttribute]::Create($columnName, $value))
+            }
+
+
+            $csEntry | Add-xADSyncPSConnectorCSAttribute -ModificationType Add -Name $columnName -Value ([Collections.IList]($record.$columnName.Split(";")))
+
+        }
+
+    }
+
+    if ($foundValidColumns)
+    {
+
+        Write-DebugLog 'Publishing CSEntryChange'
+
+        $csEntries.Add($csEntry)
+
+    }
+
+    Write-DebugLog 'Record completed'
+
+}
+
+##TODO: Support paging
+
+$importResults.CSEntries = $csEntries
+
+$importResults.MoreToImport = $false
+
+Write-Output $importResults</Value>
+          </Parameter>
+          <Parameter>
+            <Name>End Import Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Begin Export Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Export Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>param(
+  [System.Collections.ObjectModel.KeyedCollection[string, Microsoft.MetadirectoryServices.ConfigParameter]]
+  $ConfigParameters,
+  [Microsoft.MetadirectoryServices.Schema]
+  $Schema,
+  [Microsoft.MetadirectoryServices.OpenExportConnectionRunStep]
+  $OpenExportConnectionRunStep,
+  [System.Collections.Generic.IList[Microsoft.MetaDirectoryServices.CSEntryChange]]
+  $CSEntries,
+  [pscredential]
+  $PSCredential
+)
+
+Set-PSDebug -Strict
+
+
+$commonModule = (Join-Path -Path ([Microsoft.MetadirectoryServices.MAUtils]::MAFolder) -ChildPath $ConfigParameters['Common Module Script Name (with extension)'].Value)
+Import-Module -Name $commonModule -Verbose:$false -ErrorAction Stop
+
+#region function
+
+function CreateCustomPSObject {
+
+  param
+  (
+    $PropertyNames = @()
+  )
+
+  $template = New-Object -TypeName System.Object
+
+  foreach ($property in $PropertyNames) {
+
+    $template | Add-Member -MemberType NoteProperty -Name $property -Value $null
+
+  }
+
+  return $template
+}
+
+
+function Write-DebugLog {
+  param
+  (
+    [string]$Message
+  )
+
+  $logPath = "C:\ExportScript.log"
+  $logMessage = "$(Get-Date -Format "yyyy-MM-dd HH:mm:ss") - $Message"
+  Add-Content -Path $logPath -Value $logMessage
+
+}
+
+function GetTokenFromCredentials {
+  param (
+    [System.Management.Automation.PSCredential]$Credentials
+  )
+  Write-DebugLog "Retrieving TOKEN"
+  $token = $Credentials.GetNetworkCredential().Password
+  Write-DebugLog "TOKEN Retrieval completed"
+  return $token
+}
+
+
+
+#region OKTA Functions
+function Add-OktaProvisionedUser {
+  param (
+    $baseObject
+  )
+
+  $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+  $Token = GetTokenFromCredentials -Credentials $PSCredential
+  $headers.Add("Accept", "application/json")
+  $headers.Add("Content-Type", "application/json")
+  $headers.Add("Authorization", "SSWS $Token")
+  $headers.Add("Cookie", "JSESSIONID=C0B3B05DB3903768410F4B0AD4EC7BE3")
+  
+  $body = @"
+  {
+          `"profile`": {
+                  `"login`": `"Vasco.brock@example.com`",
+                  `"firstName`": `"Vasco`",
+                  `"lastName`": `"Brock`",
+                  `"nickName`": `"Vasco`",
+                  `"displayName`": `"Vasco Brock`",
+                  `"email`": `"Vasco.brock@example.com`",
+                  `"secondEmail`": `"Vasco@example.org`",
+                  `"profileUrl`": `"http://www.example.com/profile`",
+                  `"userType`": `"Employee`",
+                  `"organization`": `"Okta`",
+                  `"title`": `"Director`",
+                  `"division`": `"R&amp;D`",
+                  `"department`": `"Engineering`",
+                  `"costCenter`": `"10`",
+                  `"employeeNumber`": `"187`",
+                  `"mobilePhone`": `"+1-555-415-1337`",
+                  `"primaryPhone`": `"+1-555-514-1337`",
+                  `"streetAddress`": `"301 Brannan St.`",
+                  `"city`": `"San Francisco`",
+                  `"state`": `"CA`",
+                  `"zipCode`": `"94107`",
+                  `"countryCode`": `"US`"
+          }
+  }
+"@
+  $body = $body.Replace("Vasco.brock@example.com", $($baseObject.login))
+  $body = $body.Replace("Vasco", $($baseObject.firstName))
+  $body = $body.Replace("Brock", $($baseObject.lastName))
+  $body = $body.Replace("Vasco", $($baseObject.nickName))
+  $body = $body.Replace("Vasco Brock", $($baseObject.displayName))
+  $body = $body.Replace("Vasco.brock@example.com", $($baseObject.email))
+  $body = $body.Replace("Vasco@example.org", $($baseObject.secondEmail))
+  $body = $body.Replace("http://www.example.com/profile", $($baseObject.profileUrl))
+  #$body = $body.Replace("en-US", $($baseObject.preferredLanguage))
+  $body = $body.Replace("Employee", $($baseObject.userType))
+  $body = $body.Replace("Okta", $($baseObject.organization))
+  $body = $body.Replace("Director", $($baseObject.title))
+  $body = $body.Replace("R&amp;D", $($baseObject.division))
+  $body = $body.Replace("Engineering", $($baseObject.department))
+  $body = $body.Replace("10", $($baseObject.costCenter))
+  $body = $body.Replace("187", $($baseObject.employeeNumber))
+  $body = $body.Replace("+1-555-415-1337", $($baseObject.mobilePhone))
+  $body = $body.Replace("+1-555-514-1337", $($baseObject.primaryPhone))
+  $body = $body.Replace("301 Brannan St.", $($baseObject.streetAddress))
+  $body = $body.Replace("San Francisco", $($baseObject.city))
+  $body = $body.Replace("CA", $($baseObject.state))
+  $body = $body.Replace("94107", $($baseObject.zipCode))
+  $body = $body.Replace("US", $($baseObject.countryCode))
+  Write-DebugLog -Message "Body for AddObject:\n $body"
+  
+  try {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $response = Invoke-RestMethod 'https://trial-8839557-admin.okta.com//api/v1/users?activate=true' -Method 'POST' -Headers $headers -Body $body
+    $response = $response | ConvertTo-Json 
+    Write-DebugLog -Message "Response: $response"
+  
+          
+  }
+  catch {
+    Write-DebugLog -Message "Error: $_"
+  }
+
+  
+}
+
+function Update-OktaUser {
+  param (
+      
+    [Parameter(Mandatory = $true)]
+    [string]$attributeName,
+
+    [Parameter(Mandatory = $true)]
+    [string]$attributeValue,
+
+    [Parameter(Mandatory = $true)]
+    [string]$userId
+  )
+
+  $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+  $token = GetTokenFromCredentials -Credentials $PSCredential
+  $headers.Add("Accept", "application/json")
+  $headers.Add("Content-Type", "application/json")
+  $headers.Add("Authorization", "SSWS $token")
+  $headers.Add("Cookie", "JSESSIONID=D6E791D528C893BC8B32EDDA0FD2A8F7")
+
+  if ($attributeName -eq "status") {
+    if ($attributeValue -eq "Active") {
+      try {
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        $response = Invoke-RestMethod "https://trial-8839557-admin.okta.com//api/v1/users/$userId/lifecycle/activate?sendEmail=false" -Method 'POST' -Headers $headers
+        $response = $response | ConvertTo-Json 
+        Write-DebugLog -Message "Response: $response"
+        
+      }
+      catch {
+        Write-DebugLog -Message "Error: $_"
+      }
+      
+    }
+    if ($attributeValue -eq "Inactive") {
+      try {
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        $response = Invoke-RestMethod "https://trial-8839557-admin.okta.com//api/v1/users/$userId/lifecycle//deactivate?sendEmail=false" -Method 'POST' -Headers $headers
+        $response = $response | ConvertTo-Json 
+        Write-DebugLog -Message "Response: $response"
+        
+      }
+      catch {
+        Write-DebugLog -Message "Error: $_"
+      }
+    }
+  }
+  else {
+    $body = @{
+      profile = @{
+        $attributeName = $attributeValue
+      }
+    } | ConvertTo-Json
+    try {
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+      $response = Invoke-RestMethod "https://trial-8839557-admin.okta.com//api/v1/users/$userId" -Method 'POST' -Headers $headers -Body $body
+      $response = $response | ConvertTo-Json 
+      Write-DebugLog -Message "Response: $response"
+  
+        
+    }
+    catch {
+      Write-DebugLog -Message "Error: $_"
+    }
+
+  }
+  
+
+  
+}
+
+function Delete-OktaUser {
+  param (
+    
+    [Parameter(Mandatory = $true)]
+    [string]$userId
+
+  )
+
+  $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+  $token = GetTokenFromCredentials -Credentials $PSCredential
+  $headers.Add("Accept", "application/json")
+  $headers.Add("Content-Type", "application/json")
+  $headers.Add("Authorization", "SSWS $token")
+  $headers.Add("Cookie", "JSESSIONID=D6E791D528C893BC8B32EDDA0FD2A8F7")
+
+
+  
+  try {
+    
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $url = "https://trial-8839557-admin.okta.com//api/v1/users/$userId"
+    Write-DebugLog -Message "URL: $url"
+    $response = Invoke-RestMethod -Uri $url -Method 'DELETE' -Headers $headers
+    $response = $response | ConvertTo-Json 
+    Write-DebugLog -Message "Response: $response"
+
+   
+  }
+  catch {
+    Write-DebugLog -Message "Error: $_"
+  }
+
+
+}
+
+#endregion
+
+Write-DebugLog -Message "-----------------------------------------------------------------------------"
+Write-DebugLog -Message "Starting Export Script Main Function"
+
+$csentryChangeResults = New-Object "System.Collections.Generic.List[Microsoft.MetadirectoryServices.CSEntryChangeResult]"
+
+
+$columnsToExport = @()
+
+foreach ($attribute in $Schema.Types[0].Attributes) {
+
+  $columnsToExport += $attribute.Name
+
+  Write-DebugLog -Message "Added attribute $($attribute.Name) to export list"
+
+}
+
+
+
+Write-DebugLog -Message "Processing object $($entry.Identifier)"
+
+
+foreach ($entry in $CSEntries) {
+  
+  
+
+  Write-DebugLog -Message "-------------------------------------------------------------------------------------------------------"
+    
+  foreach ($attributeName in $entry.ChangedAttributeNames) {
+    Write-DebugLog -Message "Attribute: $attributeName"
+    Write-DebugLog -Message "Value: $($entry.AttributeChanges[$attributeName].ValueChanges[0].Value)"
+    $anchorAttributeValue = $entry.AnchorAttributes[0].Value.ToString();
+    Write-DebugLog -Message "Anchor Attribute: $($entry.AnchorAttributes[0].Name)"
+    Write-DebugLog -Message "Anchor Value: $anchorAttributeValue"
+    if ($entry.ObjectModificationType -eq 'Replace') {
+      Update-OktaUser -attributeName $attributeName -attributeValue $entry.AttributeChanges[$attributeName].ValueChanges[0].Value -userId $anchorAttributeValue
+
+
+    }
+    
+    
+  }
+ 
+  Write-DebugLog -Message "Processing object $($entry.Identifier). ObjectModificationType $($entry.ObjectModificationType)"
+
+  [bool]$objectHasAttributes = $false
+
+  
+  $baseObject = CreateCustomPSObject -PropertyNames $columnsToExport
+
+  if ($entry.ObjectModificationType -eq 'Replace') {
+    $anchorAttributeName = $entry.AnchorAttributes[0].Name;
+    $anchorAttributeValue = $entry.AnchorAttributes[0].Value.ToString();
+    
+    
+
+    foreach ($attribute in $entry.ChangedAttributeNames) {
+      
+      $value = Get-CSEntryChangeValue -CSEntryChange $entry -AttributeName $attribute
+      Write-DebugLog -Message " Changed Attribute Value is : $value"
+      
+      
+
+    }
+  }
+
+
+  if ($entry.ObjectModificationType -ne 'Delete') {
+
+    foreach ($attribute in $columnsToExport) {
+
+      if (($entry.AttributeChanges.Contains($attribute)) -eq $false -and ($entry.AnchorAttributes.Contains($attribute) -eq $false)) {
+
+        continue
+
+      }
+
+
+      if ($entry.AnchorAttributes[$attribute].Value) {
+
+        $baseObject.$attribute = $entry.AnchorAttributes[$attribute].Value
+
+        $objectHasAttributes = $true
+
+      }
+
+      elseif ($entry.AttributeChanges[$attribute].ValueChanges[0].Value) {
+
+        $baseObject.$attribute = ($entry.AttributeChanges[$attribute].ValueChanges | Select-Object -Expand Value) -join ";"
+
+        $objectHasAttributes = $true
+
+      }
+      elseif ($entry.AttributeChanges[$attribute].DataType -eq "Boolean") {
+        $baseObject.$attribute = ($entry.AttributeChanges[$attribute].ValueChanges | Select-Object -Expand Value) -join ";"
+
+        
+
+      }
+
+    }
+
+    if ($objectHasAttributes) {
+
+      foreach ($property in $baseObject.PSObject.Properties) { 
+        if ($property.Value -eq $null) {
+          $baseObject.($property.Name) = ""
+        }
+      }
+      
+      
+      foreach ($property in $baseObject.PSObject.Properties) {
+        Write-DebugLog -Message "Added $($property.Name) with value $($property.Value)"
+      }
+      if ($entry.ObjectModificationType -eq 'Add') {
+        Write-DebugLog -Message "Adding user to OKTA with Email $($baseObject.Email) and DisplayName $($baseObject.DisplayName) and UserName $($baseObject.UserName) and AzureObjectID $($baseObject.AzureObjectID)"
+        Add-OktaProvisionedUser -baseObject $baseObject
+      }
+
+      
+
+    }
+
+  }
+  else {
+    $anchorAttributeName = $entry.AnchorAttributes[0].Name;
+    $anchorAttributeValue = $entry.AnchorAttributes[0].Value.ToString();
+    Write-DebugLog -Message "Delete the object with attribute '$($anchorAttributeName)' equals '$($anchorAttributeValue)'"
+    Delete-OktaUser -userId $anchorAttributeValue
+  }
+
+  $csentryChangeResult = [Microsoft.MetadirectoryServices.CSEntryChangeResult]::Create($entry.Identifier, $null, "Success")
+  $csentryChangeResults.Add($csentryChangeResult)
+
+  Write-DebugLog -Message "Completed processing object $($entry.Identifier)"
+
+}
+
+$closedType = [type]"Microsoft.MetadirectoryServices.PutExportEntriesResults"
+
+return [Activator]::CreateInstance($closedType, $csentryChangeResults)</Value>
+          </Parameter>
+          <Parameter>
+            <Name>End Export Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Begin Password Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>Password Extension Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>End Password Script</Name>
+            <Type>Text</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value />
+          </Parameter>
+          <Parameter>
+            <Name>PowerShell script execution timeout in minutes (0 – disabled)</Name>
+            <Type>String</Type>
+            <Use>Global</Use>
+            <SchemaNumber>1</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>0</Value>
+          </Parameter>
+          <Parameter>
+            <Name>PageSizeFullImport</Name>
+            <Type>Text</Type>
+            <Use>RunStep</Use>
+            <SchemaNumber>0</SchemaNumber>
+            <Encrypted>false</Encrypted>
+            <Value>500</Value>
+          </Parameter>
+        </Parameters>
+        <RunConfigurations>
+          <RunConfiguration>
+            <Id>a0baba40-8bca-4e58-9d4b-38851f12af74</Id>
+            <Name>Export</Name>
+            <VersionNumber>0</VersionNumber>
+            <CreationTime>2024-03-01T05:36:04.7168519-08:00</CreationTime>
+            <LastModificationTime>2024-03-01T05:36:04.7168519-08:00</LastModificationTime>
+            <RunSteps>
+              <RunStep>
+                <Name>Export</Name>
+                <Type>None</Type>
+                <Partition>default</Partition>
+                <BatchSize>0</BatchSize>
+                <Timeout>0</Timeout>
+                <Parameters>
+                  <Parameter>
+                    <Name>PageSizeExport</Name>
+                    <Type>Text</Type>
+                    <Use>RunStep</Use>
+                    <SchemaNumber>0</SchemaNumber>
+                    <Encrypted>false</Encrypted>
+                    <Value>500</Value>
+                  </Parameter>
+                </Parameters>
+              </RunStep>
+            </RunSteps>
+          </RunConfiguration>
+          <RunConfiguration>
+            <Id>084d8a3a-fd7d-4092-8ed8-0522c5d2d6b7</Id>
+            <Name>FullImport</Name>
+            <VersionNumber>0</VersionNumber>
+            <CreationTime>2024-03-01T05:36:09.2460519-08:00</CreationTime>
+            <LastModificationTime>2024-03-01T05:36:09.2460519-08:00</LastModificationTime>
+            <RunSteps>
+              <RunStep>
+                <Name>Import</Name>
+                <Type>None</Type>
+                <Partition>default</Partition>
+                <BatchSize>0</BatchSize>
+                <Timeout>0</Timeout>
+                <Parameters>
+                  <Parameter>
+                    <Name>PageSizeFullImport</Name>
+                    <Type>Text</Type>
+                    <Use>RunStep</Use>
+                    <SchemaNumber>0</SchemaNumber>
+                    <Encrypted>false</Encrypted>
+                    <Value>500</Value>
+                  </Parameter>
+                </Parameters>
+              </RunStep>
+            </RunSteps>
+          </RunConfiguration>
+        </RunConfigurations>
+        <IsExportSupported>true</IsExportSupported>
+        <IsFullImportSupported>true</IsFullImportSupported>
+        <IsDeltaImportSupported>false</IsDeltaImportSupported>
+        <IsExportOnly>false</IsExportOnly>
+      </ConnectorConfig>
+      <Schema>
+        <EntriesSchema>
+          <EntrySchema>
+            <ExternalName>User</ExternalName>
+            <ObjectType>Person</ObjectType>
+            <SchemaAttributes>
+              <AttributeSchema>
+                <Name>login</Name>
+                <IsAnchor>true</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>-dn-</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>true</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>city</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>costCenter</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>countryCode</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>department</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>displayName</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>division</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>email</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>employeeNumber</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>firstName</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>lastName</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>mobilePhone</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>nickName</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>organization</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>preferredLanguage</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>primaryPhone</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>profileUrl</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>secondEmail</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>state</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>streetAddress</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>title</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>userType</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>zipCode</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>false</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+              <AttributeSchema>
+                <Name>status</Name>
+                <IsAnchor>false</IsAnchor>
+                <IsDN>false</IsDN>
+                <IsDeprovisioningAttribute>false</IsDeprovisioningAttribute>
+                <Multivalued>false</Multivalued>
+                <TreatAsSingleValue>true</TreatAsSingleValue>
+                <DataType>String</DataType>
+              </AttributeSchema>
+            </SchemaAttributes>
+            <IsDNAutogenerated>false</IsDNAutogenerated>
+            <DeprovisioningModel>
+              <HardDeleteStatusAttribute />
+              <SoftDeleteStatusAttribute />
+              <HardDelete>TreatAsHard</HardDelete>
+              <SoftDelete>None</SoftDelete>
+            </DeprovisioningModel>
+          </EntrySchema>
+        </EntriesSchema>
+        <Partitions>
+          <Partition>
+            <Id>0a703075-55f6-448a-a3b4-892f8f81f5fa</Id>
+            <Name>default</Name>
+            <DN>default</DN>
+          </Partition>
+        </Partitions>
+        <ExportPasswordInFirstPass>False</ExportPasswordInFirstPass>
+        <SupportPassword>False</SupportPassword>
+      </Schema>
+      <ECMAConfig>
+        <ECMAFolderPath />
+        <LibraryName>Microsoft.IAM.Connector.PowerShell</LibraryName>
+        <AutosyncTimer>120</AutosyncTimer>
+        <SecretToken />
+        <ProfileName>PowershellRestAPI</ProfileName>
+        <ProfileDescription>Powershell Connector For Connecting With Rest API Application.</ProfileDescription>
+        <CreationDateTime>Friday, March 1, 2024 4:58:41 AM</CreationDateTime>
+        <ModificationDateTime>Friday, March 1, 2024 4:58:41 AM</ModificationDateTime>
+        <Validated>true</Validated>
+      </ECMAConfig>
+    </Connector>
+  </Connectors>
+  <Setting>
+    <Port>8585</Port>
+    <Certificate />
+  </Setting>
+</Configuration>
